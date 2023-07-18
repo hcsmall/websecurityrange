@@ -1,4 +1,6 @@
-users表：
+需要对应创建数据库表
+
+#users表：
 CREATE TABLE users (
   id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(50) NOT NULL UNIQUE,
@@ -12,7 +14,7 @@ CREATE TABLE users (
 );
 
 
-groups 表：
+#groups 表：
 CREATE TABLE groups (
   id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
@@ -22,7 +24,7 @@ CREATE TABLE groups (
 );
 
 
-posts 表：
+#posts 表：
 CREATE TABLE posts (
   id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   user_id INT(11) NOT NULL,
@@ -35,7 +37,7 @@ CREATE TABLE posts (
 );
 
 
-replies 表：
+#replies 表：
 CREATE TABLE replies (
   id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   post_id INT(11) NOT NULL,
@@ -46,7 +48,7 @@ CREATE TABLE replies (
 );
 
 
-invites 表：
+#invites 表：
 CREATE TABLE invites (
   id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   code VARCHAR(50) NOT NULL UNIQUE,
